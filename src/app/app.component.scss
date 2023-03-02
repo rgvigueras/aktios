@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  footer {
+    margin: auto;
+  }
+}

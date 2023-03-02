@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 8px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  .card {
+    max-width: 400px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    mat-card-content {
+      width: max-content;
+    }
+  }
+}

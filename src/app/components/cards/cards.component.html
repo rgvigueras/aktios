@@ -1,0 +1,19 @@
+<mat-card
+  *ngFor="let person of persons | async"
+  class="card"
+  (click)="openPersonDialog(person)"
+>
+  <mat-card-header>
+    <mat-icon>face</mat-icon>
+    <mat-card-title>{{ person.name }}</mat-card-title>
+    <mat-card-subtitle
+      >{{ person.surname }} {{ person.surname2 }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <p>surname: {{ person.surname }}</p>
+    <p>surname2: {{ person.surname2 }}</p>
+    <p>name: {{ person.name }}</p>
+    <p>phone: {{ person.phone }}</p>
+  </mat-card-content>
+</mat-card>

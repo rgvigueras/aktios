@@ -1,0 +1,14 @@
+<h1>Person Details</h1>
+<mat-dialog-content>
+  <p>Id: {{ person?.id }}</p>
+  <p>Name: {{ person?.name }}</p>
+  <p>Surname: {{ person?.surname }}</p>
+  <p>Surname2: {{ person?.surname2 }}</p>
+  <p>Sex: {{ person?.sex }}</p>
+  <p>Phone: {{ person?.phone }}</p>
+  <p>Birthday: {{ person?.datebirthday | date : "dd/mm/yyyy" }}</p>
+  <p>lastModification: {{ person?.lastModification | date : "dd/mm/yyyy" }}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

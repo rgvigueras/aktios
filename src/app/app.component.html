@@ -1,0 +1,12 @@
+<header>
+  <app-search-engine (filterEvent)="filterPersons($event)"></app-search-engine>
+</header>
+<body>
+  <app-cards [persons]="persons$"></app-cards>
+</body>
+<footer>
+  <app-paginator
+    [length]="length"
+    (loadPageEvent)="loadPage($event)"
+  ></app-paginator>
+</footer>

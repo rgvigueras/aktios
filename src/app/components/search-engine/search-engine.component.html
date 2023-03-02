@@ -1,0 +1,22 @@
+<div class="search-container">
+  <div class="search">
+    <form [formGroup]="form">
+      <div class="search-wrapper">
+        <div
+          class="search-container"
+          fxFlex
+          fxLayout="row"
+          fxLayoutAlign="start center"
+        >
+          <mat-icon>search</mat-icon>
+          <input
+            type="text"
+            name="search"
+            placeholder="Search by name, surname, phone"
+            formControlName="search"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

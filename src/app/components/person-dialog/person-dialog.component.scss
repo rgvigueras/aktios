@@ -1,0 +1,10 @@
+:host {
+  .card {
+    max-width: 400px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    mat-card-content {
+      width: max-content;
+    }
+  }
+}
